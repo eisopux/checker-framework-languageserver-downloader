@@ -48,7 +48,7 @@ public class DownloaderMain {
 
         /* 
         Other tools may pass this output and language server/checker framework prefix should 
-        be handled when retrieving the path. Tools includ VSCode Plugin.
+        be handled when retrieving the path. Tools include VSCode Plugin.
         */
         BaseDownloader d = new LanguageServerDownloader(ls_org, ls_repo, folder);
         File f = d.download();
