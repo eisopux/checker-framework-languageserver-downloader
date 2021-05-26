@@ -46,9 +46,9 @@ public class DownloaderMain {
             System.err.println("The path provided is not a folder: " + dir);
         }
 
-        /* 
-        Other tools may pass this output and language server/checker framework prefix should 
-        be handled when retrieving the path. Tools include VSCode Plugin.
+        /*
+        Note that other tools, e.g. the VS Code CF plugin, depend on this output.
+        Any changes here should be documented in the README.
         */
         BaseDownloader d = new LanguageServerDownloader(ls_org, ls_repo, folder);
         File f = d.download();

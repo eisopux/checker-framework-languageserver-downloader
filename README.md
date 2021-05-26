@@ -89,3 +89,8 @@ the first file will be downloaded.
 
 After this, add arguments to `DownloaderMain`, and instantiate/call your new
 class there.
+
+## Expected Output 
+
+The expected output for the server downloader is: `Got language server: {absolute_path}`
+The expected output for the framework downloader is: `Got Checker Framework: {absolute_path}`
