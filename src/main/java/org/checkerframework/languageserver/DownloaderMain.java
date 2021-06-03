@@ -46,6 +46,10 @@ public class DownloaderMain {
             System.err.println("The path provided is not a folder: " + dir);
         }
 
+        /*
+        Note that other tools, e.g. the VS Code CF plugin, depend on this output.
+        Any changes here should be documented in the README.
+        */
         BaseDownloader d = new LanguageServerDownloader(ls_org, ls_repo, folder);
         File f = d.download();
         System.out.println("Got language server: " + f.getAbsolutePath());
