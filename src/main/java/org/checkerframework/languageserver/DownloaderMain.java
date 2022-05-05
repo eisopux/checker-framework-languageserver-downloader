@@ -23,7 +23,7 @@ public class DownloaderMain {
         if (cmd.hasOption(OPT_CHECKERFRAMEWORK_ORG)) {
             cf_org = cmd.getOptionValue(OPT_CHECKERFRAMEWORK_ORG);
         } else {
-            cf_org = "typetools";
+            cf_org = "eisop";
         }
         if (cmd.hasOption(OPT_CHECKERFRAMEWORK_REPO)) {
             cf_repo = cmd.getOptionValue(OPT_CHECKERFRAMEWORK_REPO);
@@ -67,7 +67,7 @@ public class DownloaderMain {
                 OPT_CHECKERFRAMEWORK_ORG,
                 OPT_CHECKERFRAMEWORK_ORG,
                 true,
-                "the organization of Checker Framework to download; default to typetools");
+                "the organization of Checker Framework to download; default to eisop");
         options.addOption(
                 OPT_CHECKERFRAMEWORK_REPO,
                 OPT_CHECKERFRAMEWORK_REPO,

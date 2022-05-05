@@ -5,7 +5,7 @@
 This downloader can be used by other plugins that wish to use the [Checker
 Framework Language
 Server](https://github.com/eisopux/checker-framework-languageserver) and the
-[Checker Framework](https://github.com/typetools/checker-framework) to download
+[Checker Framework](https://github.com/eisop/checker-framework) to download
 the latest versions of them, so the actual plugins for editors/IDEs can focus
 more on editor-specific functions.
 
@@ -24,7 +24,7 @@ This is the path to where downloaded files will be stored.
 ### Optional: `checkerframework_org`
 
 This specifies from which GitHub organization to download the Checker Framework.
-The default is `typetools`.
+The default is `eisop`.
 
 ### Optional: `checkerframework_repo`
 
@@ -32,7 +32,7 @@ This specifies from which GitHub repository under `checkerframework_org` to
 download the Checker Framework. The default is `checker-framework`.
 
 Combined with `checkerframework_org`, the default Checker Framework is
-`typetools/checker-framework`.
+`eisop/checker-framework`.
 
 ### Optional: `languageserver_org`
 
