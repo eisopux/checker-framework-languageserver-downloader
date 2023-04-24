@@ -1,10 +1,11 @@
 package org.checkerframework.languageserver;
 
-import java.io.File;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Options;
+
+import java.io.File;
 
 public class DownloaderMain {
     private static final String OPT_DESTINATION = "dest";

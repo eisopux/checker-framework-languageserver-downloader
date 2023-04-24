@@ -1,10 +1,12 @@
 package org.checkerframework.languageserver;
 
+import net.lingala.zip4j.ZipFile;
+
+import org.apache.commons.io.FilenameUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
-import net.lingala.zip4j.ZipFile;
-import org.apache.commons.io.FilenameUtils;
 
 public class CheckerFrameworkDownloader extends BaseDownloader {
     public CheckerFrameworkDownloader(String org, String repo, File folder) {
