@@ -59,14 +59,14 @@ java \
     -dest /some/env/
 ```
 
-Download the eisop version of the Checker Framework and the default CF Language
+Download the typetools version of the Checker Framework and the default CF Language
 Server:
 
 ```
 java \
     -jar checker-framework-languageserver-downloader.jar \
     -dest /some/env/ \
-    -checkerframework_org eisop
+    -checkerframework_org typetools
 ```
 
 
