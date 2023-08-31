@@ -1,4 +1,4 @@
-Version 0.3.0 (August 29, 2023)
+Version 0.3.0 (September 1, 2023)
 -------------------------------
 
 Description of expected output.
