@@ -30,6 +30,10 @@ application {
     mainClass = 'org.checkerframework.languageserver.DownloaderMain'
 }
 
+shadowJar {
+    minimize()
+}
+
 tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:deprecation"
 }
