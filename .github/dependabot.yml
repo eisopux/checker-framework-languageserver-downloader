@@ -15,3 +15,8 @@ updates:
   - dependency-name: com.diffplug.spotless
     versions:
     - 5.11.0
+
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
