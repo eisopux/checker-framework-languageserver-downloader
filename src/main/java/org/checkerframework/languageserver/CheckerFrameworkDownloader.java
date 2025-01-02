@@ -4,6 +4,7 @@ import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Paths;
 
 import net.lingala.zip4j.ZipFile;
@@ -13,7 +14,7 @@ public class CheckerFrameworkDownloader extends BaseDownloader {
         super(org, repo, folder);
     }
 
-    private File getUnzipped() throws IOException {
+    private File getUnzipped() throws IOException, URISyntaxException {
         File dest = getDestination();
         String cfzip = dest.getAbsolutePath();
         return Paths.get(FilenameUtils.getFullPath(cfzip), FilenameUtils.getBaseName(cfzip))
@@ -21,7 +22,7 @@ public class CheckerFrameworkDownloader extends BaseDownloader {
     }
 
     @Override
-    public File download() throws IOException {
+    public File download() throws IOException, URISyntaxException {
         File unzipped = getUnzipped();
         if (!unzipped.exists()) {
             File dest = doDownload();
